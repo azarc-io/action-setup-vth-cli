@@ -1,0 +1,16 @@
+name: 'Install Verathread CLI'
+description: 'Installs the Verathread CLI'
+inputs:
+  version:
+    description: 'Version of the CLI to install'
+    default: "v1.10.0"
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: "Install Verathread CLI"
+      shell: bash
+      working-directory: ${{ github.action_path }}
+      run: |
+        export TAG=${{ inputs.version }}
+        wget -q -O - https://vth-artifacts.s3-eu-west-1.amazonaws.com/cli/install.sh | bash
