@@ -6,7 +6,7 @@ An action that makes it simple to install the Verathread CLI in Github pipelines
 
 ```shell
 - name: Install Verathread CLI
-  uses: azarc-io/action-setup-vth-cli
+  uses: azarc-io/action-setup-vth-cli@v1
   with:
     version: v1.10.0
 ```

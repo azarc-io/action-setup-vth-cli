@@ -13,4 +13,4 @@ runs:
       working-directory: ${{ github.action_path }}
       run: |
         export TAG=${{ inputs.version }}
-        wget -q -O - https://vth-artifacts.s3-eu-west-1.amazonaws.com/cli/install.sh | bash
+        wget -q -O - https://vth-artifacts.s3-eu-west-1.amazonaws.com/cli_v2/install.sh | bash
