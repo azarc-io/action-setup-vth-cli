@@ -2,9 +2,8 @@ name: 'Install Verathread CLI'
 description: 'Installs the Verathread CLI'
 inputs:
   version:
-    description: 'Version of the CLI to install'
-    default: "1.10.0"
-    required: true
+    description: 'Version of the CLI to install, leaving this empty will install the latest version'
+    required: false
 runs:
   using: "composite"
   steps:
